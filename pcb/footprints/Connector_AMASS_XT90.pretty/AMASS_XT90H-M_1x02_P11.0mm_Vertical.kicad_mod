@@ -1,0 +1,153 @@
+(footprint "AMASS_XT90H-M_1x02_P11.0mm_Vertical"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 5.5 -5.95 180)
+		(layer "F.SilkS")
+		(uuid "e17f6243-d250-4d0b-a5d1-1c95cc3ccead")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "AMASS_XT90H-M_1x02_P11.0mm_Vertical"
+		(at 5.5 5.95 180)
+		(layer "F.Fab")
+		(uuid "072ceb70-8025-4155-8ddc-5ed5b1dedaf4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify top)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "be546dcc-d869-4a9d-bd1b-8584f2ef2124")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9725f5f9-b60b-4f08-808d-5ff7db8867c0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_poly
+		(pts
+			(xy -2.35 5.005658) (xy 16 5.005658) (xy 16 -4.894342) (xy -2.35 -4.894342) (xy -4.9 -2.944342) (xy -4.9 3.055658)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "0cabc7df-709e-45a2-b467-6e8663a521ab")
+	)
+	(fp_poly
+		(pts
+			(xy -2.023077 5.505658) (xy 16.25 5.505658) (xy 16.25 -5.394342) (xy -1.946154 -5.394342) (xy -5.15 -2.944342)
+			(xy -5.15 3.114482)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "63ac3406-5232-49e9-98fa-e91f109344a9")
+	)
+	(fp_poly
+		(pts
+			(xy -2.35 5.005658) (xy 16 5.005658) (xy 16 -4.894342) (xy -2.35 -4.894342) (xy -4.9 -2.944342) (xy -4.9 3.055658)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "4c541baa-2cb0-49fa-9876-209d13c9a96a")
+	)
+	(fp_text user "-"
+		(at -6 0 0)
+		(layer "F.SilkS")
+		(uuid "37157e0f-22f7-4bd5-8dfc-b84031628fed")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "+"
+		(at 17 0 0)
+		(layer "F.SilkS")
+		(uuid "b70b07a0-b921-43a4-a748-4b0dffbbe8d1")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 5.5 0 180)
+		(layer "F.Fab")
+		(uuid "bfdf1bed-f4ca-4fcf-82b1-caf895775461")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at 0 0)
+		(size 8.2 8.2)
+		(drill 6.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.25)
+		(uuid "b0b4d4e3-f488-4ccc-a148-7910688cf044")
+	)
+	(pad "2" thru_hole circle
+		(at 11 0)
+		(size 8.2 8.2)
+		(drill 6.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+		(uuid "7b99ce1d-b6fb-4fda-8ba8-9d12238a5d89")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3d-models/AMASS_XT90H-M_1x02_P11.0mm_Vertical.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

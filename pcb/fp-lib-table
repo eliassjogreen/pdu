@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Connector_WingTAT")(type "KiCad")(uri "${KIPRJMOD}/footprints/Connector_WingTAT.pretty")(options "")(descr ""))
+  (lib (name "Connector_AMASS_XT90")(type "KiCad")(uri "${KIPRJMOD}/footprints/Connector_AMASS_XT90.pretty")(options "")(descr ""))
+)

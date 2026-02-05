@@ -1,0 +1,78 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "d242a8db-9e40-4146-b78c-423954886976")
+	(paper "A5")
+	(title_block
+		(title "Jumper")
+		(rev "1")
+		(company "Elias Sjögreen")
+		(comment 1 "A jumper board used when you do not wish to use a second PSU or external UPS")
+	)
+	(lib_symbols)
+	(wire
+		(pts
+			(xy 81.28 41.91) (xy 83.82 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "144ace4c-b8f3-4fc4-b705-f0f5384cd966")
+	)
+	(wire
+		(pts
+			(xy 81.28 39.37) (xy 83.82 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5826f33-3e06-4cd7-ab92-a2eb37d7a05e")
+	)
+	(hierarchical_label "GND_{BUS}"
+		(shape passive)
+		(at 83.82 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6d3c14dd-24d1-4f25-9f86-b12fee88a1c2")
+	)
+	(hierarchical_label "+12V_{PSU}"
+		(shape input)
+		(at 81.28 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "95e3d90b-80fa-4bb2-80eb-6aadb34fb33b")
+	)
+	(hierarchical_label "GND_{PSU}"
+		(shape passive)
+		(at 81.28 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "95e3d90b-80fa-4bb2-80eb-6aadb34fb33c")
+	)
+	(hierarchical_label "+12V_{BUS}"
+		(shape output)
+		(at 83.82 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f01610df-007d-40c3-91e4-398f49faf2bc")
+	)
+)
