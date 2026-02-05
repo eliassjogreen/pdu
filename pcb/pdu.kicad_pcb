@@ -5622,17 +5622,27 @@
 			)
 		)
 	)
-	(gr_rect
-		(start 53.5 85.95)
-		(end 139.86 124.05)
+	(gr_line
+		(start 139.86 85.95)
+		(end 139.86 111.75)
 		(stroke
 			(width 0.1)
 			(type dash)
 		)
-		(fill no)
 		(locked yes)
 		(layer "F.SilkS")
-		(uuid "3eeb635a-1a26-44c3-9aa1-23c381ebba57")
+		(uuid "257745b6-81b6-4140-bd1e-285fde6a11f6")
+	)
+	(gr_line
+		(start 53.5 85.95)
+		(end 139.86 85.95)
+		(stroke
+			(width 0.1)
+			(type dash)
+		)
+		(locked yes)
+		(layer "F.SilkS")
+		(uuid "84bc845d-eb46-426d-8e5f-ce77795ac436")
 	)
 	(gr_rect
 		(start 55 116.05)
@@ -5642,9 +5652,52 @@
 			(type dash)
 		)
 		(fill no)
-		(locked yes)
 		(layer "F.SilkS")
 		(uuid "ac9de1d3-7d13-43da-a3eb-de1940c3c13a")
+	)
+	(gr_line
+		(start 53.5 111.75)
+		(end 53.5 85.95)
+		(stroke
+			(width 0.1)
+			(type dash)
+		)
+		(locked yes)
+		(layer "F.SilkS")
+		(uuid "b1436cbc-4c40-4a03-af04-bb35985b17b4")
+	)
+	(gr_line
+		(start 139.86 124.05)
+		(end 53.5 124.05)
+		(stroke
+			(width 0.1)
+			(type dash)
+		)
+		(locked yes)
+		(layer "F.SilkS")
+		(uuid "c39f5832-05c7-45f6-8e97-527600b006fc")
+	)
+	(gr_line
+		(start 53.5 124.05)
+		(end 53.5 121.75)
+		(stroke
+			(width 0.1)
+			(type dash)
+		)
+		(locked yes)
+		(layer "F.SilkS")
+		(uuid "e99028ef-e362-4e5d-a2ff-ae22de0f6f0e")
+	)
+	(gr_line
+		(start 139.86 121.75)
+		(end 139.86 124.05)
+		(stroke
+			(width 0.1)
+			(type dash)
+		)
+		(locked yes)
+		(layer "F.SilkS")
+		(uuid "fe220b56-e224-4b4c-a424-2e251df470d1")
 	)
 	(gr_line
 		(start 192.25 92.75)
@@ -8617,8 +8670,15 @@
 	)
 	(group ""
 		(uuid "6353d920-4cfb-4d15-ab80-5041718a10aa")
+		(members "ac9de1d3-7d13-43da-a3eb-de1940c3c13a" "edc9ae61-158c-4db6-8f92-86ecc5264ddc")
+	)
+	(group ""
+		(uuid "edc9ae61-158c-4db6-8f92-86ecc5264ddc")
 		(locked yes)
-		(members "3eeb635a-1a26-44c3-9aa1-23c381ebba57" "ac9de1d3-7d13-43da-a3eb-de1940c3c13a")
+		(members "257745b6-81b6-4140-bd1e-285fde6a11f6" "84bc845d-eb46-426d-8e5f-ce77795ac436"
+			"b1436cbc-4c40-4a03-af04-bb35985b17b4" "c39f5832-05c7-45f6-8e97-527600b006fc"
+			"e99028ef-e362-4e5d-a2ff-ae22de0f6f0e" "fe220b56-e224-4b4c-a424-2e251df470d1"
+		)
 	)
 	(group ""
 		(uuid "11818e1c-a5e2-43f6-9be5-53294c990484")
