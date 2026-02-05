@@ -139,7 +139,7 @@
 		(uuid "7b99ce1d-b6fb-4fda-8ba8-9d12238a5d89")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/3d-models/AMASS_XT90H-M_1x02_P11.0mm_Vertical.step"
+	(model "${KIPRJMOD}/3dmodels/Connector_AMASS_XT90.3dshapes/AMASS_XT90H-M_1x02_P11.0mm_Vertical.step"
 		(offset
 			(xyz 0 0 0)
 		)

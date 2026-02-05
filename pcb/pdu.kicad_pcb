@@ -774,7 +774,7 @@
 			(uuid "6374ffe9-bdd3-4290-8114-7f015ad32c14")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/3d-models/AMASS_XT90H-M_1x02_P11.0mm_Vertical.step"
+		(model "${KIPRJMOD}/3dmodels/Connector_AMASS_XT90.3dshapes/AMASS_XT90H-M_1x02_P11.0mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2484,7 +2484,7 @@
 			(uuid "de045bbd-77e3-430f-ae27-0237b17fecd4")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/3d-models/AMASS_XT90H-F_1x02_P11.0mm_Vertical.step"
+		(model "${KIPRJMOD}/3dmodels/Connector_AMASS_XT90.3dshapes/AMASS_XT90H-F_1x02_P11.0mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5053,7 +5053,7 @@
 			(uuid "bc93c770-6fce-47d9-8eec-147929323b00")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/3d-models/AMASS_XT90H-F_1x02_P11.0mm_Vertical.step"
+		(model "${KIPRJMOD}/3dmodels/Connector_AMASS_XT90.3dshapes/AMASS_XT90H-F_1x02_P11.0mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5610,7 +5610,7 @@
 			(uuid "74a2b3c4-8474-4ccf-8427-287722d2b0a4")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/3d-models/AMASS_XT90H-M_1x02_P11.0mm_Vertical.step"
+		(model "${KIPRJMOD}/3dmodels/Connector_AMASS_XT90.3dshapes/AMASS_XT90H-M_1x02_P11.0mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
