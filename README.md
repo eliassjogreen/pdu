@@ -44,6 +44,16 @@ for power devices for interfacing with [NUT](https://networkupstools.org/).
 This is still very much in the planning phase and nothing is decided yet, and
 probably will be way simpler for the first revision.
 
+## References, inspiration and links
+
+- [jayzosayers/Common-Slot-Server-Power-Supply-Breakout-Module](https://github.com/jayzosayers/Common-Slot-Server-Power-Supply-Breakout-Module)
+- [cracked-machine/CommonSlotPSU_TouchScreenController_HW](https://github.com/cracked-machine/CommonSlotPSU_TouchScreenController_HW)
+- [ButtSimpleIdeas/DPS-1200-I2C](https://github.com/ButtSimpleIdeas/DPS-1200-I2C)
+- [slundell/dps_charger](https://github.com/slundell/dps_charger)
+- [Marx1/HP_PowerSupply_ESP8266_Breakout](https://github.com/Marx1/HP_PowerSupply_ESP8266_Breakout)
+- [KCORES/KCORES-CSPS-to-ATX-Converter](https://github.com/KCORES/KCORES-CSPS-to-ATX-Converter)
+- [Rob Ruark: Common Slot Breakout](http://robruark.com/projects/common_slot/common_slot.html)
+
 ## Licenses
 
 ### Hardware
