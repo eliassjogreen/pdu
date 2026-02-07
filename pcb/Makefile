@@ -7,8 +7,6 @@ SCHEMATIC  := pdu.kicad_sch
 PCB        := pdu.kicad_pcb
 BOARDS_DIR := boards
 FAB_DIR    := fabrication
-FABHOUSES  := jlcpcb pcbway
-BOARDS     := backplane jumper
 BOARD_REFS := backplane:B1 jumper:B2
 
 .PHONY: erc
@@ -26,3 +24,11 @@ boards:
 $(BOARDS_DIR)/%.kicad_pcb: boards
 	@ref=$$(echo $(BOARD_REFS) | tr ' ' '\n' | grep "^$*" | cut -d: -f2); \
 	kikit separate --source "annotation; ref: $$ref" $(PCB) $@
+
+$(FAB_DIR)/jlcpcb/%: $(BOARDS_DIR)/%.kicad_pcb
+	mkdir -p $@
+	kikit fab jlcpcb --assembly --schematic $(SCHEMATIC) $< $@
+
+$(FAB_DIR)/pcbway/%: $(BOARDS_DIR)/%.kicad_pcb
+	mkdir -p $@
+	kikit fab pcbway --assembly --schematic $(SCHEMATIC) $< $@
