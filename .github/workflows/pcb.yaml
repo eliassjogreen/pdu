@@ -1,0 +1,49 @@
+name: PCB
+
+on:
+  push:
+    paths:
+      - "**.kicad_sch"
+      - "**.kicad_pcb"
+      - "**.kicad_pro"
+      - ".github/**.yaml"
+  pull_request:
+    paths:
+      - "**.kicad_sch"
+      - "**.kicad_pcb"
+      - "**.kicad_pro"
+      - ".github/**.yaml"
+  workflow_dispatch:
+
+jobs:
+  erc:
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:9.0
+      options: --user root
+    steps:
+      - uses: actions/checkout@v6
+      - uses: ./.github/actions/setup-kicad-and-kikit
+      - name: Run ERC
+        working-directory: pcb
+        run: make erc
+      - name: Log ERC
+        if: always()
+        working-directory: pcb
+        run: cat pdu-erc.rpt
+
+  drc:
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:9.0
+      options: --user root
+    steps:
+      - uses: actions/checkout@v6
+      - uses: ./.github/actions/setup-kicad-and-kikit
+      - name: Run DRC
+        working-directory: pcb
+        run: make drc
+      - name: Log DRC
+        if: always()
+        working-directory: pcb
+        run: cat pdu-drc.rpt

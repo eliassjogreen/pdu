@@ -39,5 +39,9 @@ fp-info-cache
 # Local project settings
 *.kicad_prl
 
+# DRC and ERC output
+*-drc.rpt
+*-erc.rpt
+
 # Fabrication output
 fabrication/*

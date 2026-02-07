@@ -15,7 +15,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "P"
+			(property "Reference" "J"
 				(at 0 0 0)
 				(effects
 					(font
@@ -31,7 +31,7 @@
 					)
 				)
 			)
-			(property "Footprint" "S-64L-2.54-5:CONN-TH_64P-P2.54_S-64L-2.54-5"
+			(property "Footprint" "Connector_WingTAT:WingTAT_S-64M-2.54-5"
 				(at 0 0 0)
 				(effects
 					(font
@@ -40,7 +40,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "https://github.com/KCORES/KCORES-CSPS-to-ATX-Converter/blob/main/Document/Datasheet/WingTAT%20S-xxM-2.54-x-xx.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -50,42 +50,6 @@
 				)
 			)
 			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer Part" "S-64L-2.54-5"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Supplier Part" "C9900001011"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Supplier" "LCSC"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC Part Name" "S-64L-2.54-5"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2706,7 +2670,7 @@
 			)
 			(justify right)
 		)
-		(uuid "130b2ba5-333c-4bfe-9565-1c29e9470c42")
+		(uuid "130b2ba5-333c-4bfe-9565-1c29e9470c43")
 	)
 	(hierarchical_label "EN"
 		(shape input)
@@ -2717,7 +2681,7 @@
 			)
 			(justify left)
 		)
-		(uuid "130b2ba5-333c-4bfe-9565-1c29e9470c42")
+		(uuid "130b2ba5-333c-4bfe-9565-1c29e9470c44")
 	)
 	(hierarchical_label "IMON"
 		(shape output)
@@ -2728,7 +2692,7 @@
 			)
 			(justify left)
 		)
-		(uuid "130b2ba5-333c-4bfe-9565-1c29e9470c42")
+		(uuid "130b2ba5-333c-4bfe-9565-1c29e9470c45")
 	)
 	(hierarchical_label "PSOK"
 		(shape output)
@@ -2739,7 +2703,7 @@
 			)
 			(justify left)
 		)
-		(uuid "130b2ba5-333c-4bfe-9565-1c29e9470c42")
+		(uuid "130b2ba5-333c-4bfe-9565-1c29e9470c46")
 	)
 	(hierarchical_label "PRE"
 		(shape input)
@@ -2750,7 +2714,7 @@
 			)
 			(justify left)
 		)
-		(uuid "130b2ba5-333c-4bfe-9565-1c29e9470c42")
+		(uuid "130b2ba5-333c-4bfe-9565-1c29e9470c47")
 	)
 	(hierarchical_label "INT"
 		(shape output)
@@ -2761,7 +2725,7 @@
 			)
 			(justify left)
 		)
-		(uuid "130b2ba5-333c-4bfe-9565-1c29e9470c42")
+		(uuid "130b2ba5-333c-4bfe-9565-1c29e9470c48")
 	)
 	(hierarchical_label "GND_{PSU}"
 		(shape passive)
@@ -2805,7 +2769,7 @@
 			)
 			(justify right)
 		)
-		(uuid "5d432bd0-6e1f-467b-928b-6c4abc73d94b")
+		(uuid "5d432bd0-6e1f-467b-928b-6c4abc73d94c")
 	)
 	(hierarchical_label "ADR3"
 		(shape input)
@@ -2816,7 +2780,7 @@
 			)
 			(justify right)
 		)
-		(uuid "5d432bd0-6e1f-467b-928b-6c4abc73d94b")
+		(uuid "5d432bd0-6e1f-467b-928b-6c4abc73d94d")
 	)
 	(hierarchical_label "GNDS"
 		(shape passive)
@@ -2872,7 +2836,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "35339616-b5e7-433d-b8d6-968faa517e10")
-		(property "Reference" "J11"
+		(property "Reference" "J12"
 			(at 45.72 24.13 0)
 			(effects
 				(font
@@ -2897,7 +2861,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://github.com/KCORES/KCORES-CSPS-to-ATX-Converter/blob/main/Document/Datasheet/WingTAT%20S-xxM-2.54-x-xx.pdf"
 			(at 45.72 71.12 0)
 			(effects
 				(font
@@ -2907,42 +2871,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 45.72 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part" "S-64L-2.54-5"
-			(at 45.72 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part" "C9900001011"
-			(at 45.72 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 45.72 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Name" "S-64L-2.54-5"
 			(at 45.72 71.12 0)
 			(effects
 				(font
@@ -3146,7 +3074,7 @@
 		(instances
 			(project "pdu"
 				(path "/868598ab-f1a7-4d2b-9f5c-b3412115ebb5/83e31ad8-0e16-4075-8c02-9dd13935ed62/576fffd4-855a-483e-987a-07264d2abf3f"
-					(reference "J11")
+					(reference "J12")
 					(unit 1)
 				)
 			)

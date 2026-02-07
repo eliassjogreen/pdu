@@ -22,7 +22,7 @@
 				)
 			)
 		)
-		(property "Footprint" "S-64L-2.54-5:CONN-TH_64P-P2.54_S-64L-2.54-5"
+		(property "Footprint" "Connector_WingTAT:WingTAT_S-64M-2.54-5"
 			(at 0 0 0)
 			(effects
 				(font

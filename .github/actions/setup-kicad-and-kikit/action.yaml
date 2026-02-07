@@ -1,0 +1,47 @@
+name: "Setup KiCad and KiKit"
+description: "Configures and sets up KiCad and KiKit"
+
+runs:
+  using: "composite"
+  steps:
+    - shell: bash
+      name: Check if user is root
+      run: |
+        if [ "$EUID" -ne 0 ]; then
+          echo "This action must be run as root. Please use a container with --user root."
+          exit 1
+        fi
+    - shell: bash
+      name: Check if KiCad is installed
+      run: |
+        if ! command -v kicad-cli &> /dev/null; then
+          echo "KiCad is not installed. Please use a container with KiCad pre-installed."
+          exit 1
+        fi
+    - shell: bash
+      name: Install KiKit and configure KiCad
+      run: |
+        apt-get update
+        apt-get install -y --no-install-recommends build-essential curl python3-pip
+
+        # Install KiKit
+        pip install --break-system-packages git+https://github.com/yaqwsx/kikit
+
+        # Add global symbols and footprints to the KiCad configuration
+        KICAD_VERSION=$(kicad-cli -v | cut -d . -f 1,2)
+        mkdir -p $HOME/.config/kicad/$KICAD_VERSION
+        mkdir -p $HOME/.local/share/kicad/$KICAD_VERSION/3rdparty/symbols/com_github_yaqwsx_kikit-library
+        mkdir -p $HOME/.local/share/kicad/$KICAD_VERSION/3rdparty/footprints/com_github_yaqwsx_kikit-library
+        mkdir -p $HOME/.local/share/kicad/$KICAD_VERSION/3rdparty/resources/com_github_yaqwsx_kikit-library
+        cp -r /home/kicad/.config/kicad $HOME/.config/
+
+        # Download and install the KiKit symbol and footprint libraries
+        curl -fsSL https://github.com/yaqwsx/KiKit/releases/download/v1.7.2/pcm-kikit-lib.zip -o /tmp/pcm-kikit-lib.zip
+        unzip /tmp/pcm-kikit-lib.zip -d /tmp/pcm-kikit-lib
+        cp -r /tmp/pcm-kikit-lib/symbols/* $HOME/.local/share/kicad/$KICAD_VERSION/3rdparty/symbols/com_github_yaqwsx_kikit-library
+        cp -r /tmp/pcm-kikit-lib/footprints/* $HOME/.local/share/kicad/$KICAD_VERSION/3rdparty/footprints/com_github_yaqwsx_kikit-library
+        cp -r /tmp/pcm-kikit-lib/resources/* $HOME/.local/share/kicad/$KICAD_VERSION/3rdparty/resources/com_github_yaqwsx_kikit-library
+
+        # Configure KiCad to use the KiKit libraries
+        sed -i '2i  (lib (name "kikit")(type "KiCad")(uri "${KICAD9_3RD_PARTY}/symbols/com_github_yaqwsx_kikit-library/kikit.kicad_sym")(options "")(descr ""))\' $HOME/.config/kicad/$KICAD_VERSION/sym-lib-table
+        sed -i '2i  (lib (name "kikit")(type "KiCad")(uri "${KICAD9_3RD_PARTY}/footprints/com_github_yaqwsx_kikit-library/kikit.pretty")(options "")(descr ""))' $HOME/.config/kicad/$KICAD_VERSION/fp-lib-table

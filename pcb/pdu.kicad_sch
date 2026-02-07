@@ -421,7 +421,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PCM_kikit:Board"
+		(symbol "kikit:Board"
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
@@ -1379,7 +1379,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_kikit:Board")
+		(lib_id "kikit:Board")
 		(at 30.48 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1406,7 +1406,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_kikit:Board"
+		(property "Footprint" "kikit:Board"
 			(at 40.64 27.305 0)
 			(effects
 				(font
@@ -1443,7 +1443,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_kikit:Board")
+		(lib_id "kikit:Board")
 		(at 78.74 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1470,7 +1470,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_kikit:Board"
+		(property "Footprint" "kikit:Board"
 			(at 88.9 27.305 0)
 			(effects
 				(font
