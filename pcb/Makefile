@@ -1,3 +1,4 @@
+.PHONY: all
 all: fabrication/backplane.kicad_pcb fabrication/jumper.kicad_pcb
 
 KICAD_CLI := kicad-cli
