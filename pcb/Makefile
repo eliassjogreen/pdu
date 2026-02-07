@@ -1,24 +1,28 @@
-.PHONY: all
-all: fabrication/backplane.kicad_pcb fabrication/jumper.kicad_pcb
-
 KICAD_CLI := kicad-cli
 ifeq ($(shell uname -s),Darwin)
 	KICAD_CLI := /Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli
 endif
 
+SCHEMATIC  := pdu.kicad_sch
+PCB        := pdu.kicad_pcb
+BOARDS_DIR := boards
+FAB_DIR    := fabrication
+FABHOUSES  := jlcpcb pcbway
+BOARDS     := backplane jumper
+BOARD_REFS := backplane:B1 jumper:B2
+
 .PHONY: erc
-erc: pdu.kicad_sch
-	$(KICAD_CLI) sch erc --exit-code-violations $<
+erc:
+	$(KICAD_CLI) sch erc --exit-code-violations $(SCHEMATIC)
 
 .PHONY: drc
-drc: pdu.kicad_pcb
-	$(KICAD_CLI) pcb drc --exit-code-violations $<
+drc:
+	$(KICAD_CLI) pcb drc --exit-code-violations $(PCB)
 
-fabrication:
-	mkdir -p fabrication
+.PHONY: boards
+boards:
+	mkdir -p $@
 
-fabrication/backplane.kicad_pcb: pdu.kicad_pcb fabrication
-	kikit separate --source 'annotation; ref: B1' $< $@
-
-fabrication/jumper.kicad_pcb: pdu.kicad_pcb fabrication
-	kikit separate --source 'annotation; ref: B2' $< $@
+$(BOARDS_DIR)/%.kicad_pcb: boards
+	@ref=$$(echo $(BOARD_REFS) | tr ' ' '\n' | grep "^$*" | cut -d: -f2); \
+	kikit separate --source "annotation; ref: $$ref" $(PCB) $@

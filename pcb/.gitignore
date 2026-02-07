@@ -44,4 +44,5 @@ fp-info-cache
 *-erc.rpt
 
 # Fabrication output
+boards/*
 fabrication/*
